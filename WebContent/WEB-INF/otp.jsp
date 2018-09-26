@@ -7,19 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-${message}
-<fieldset>
-<legend><h1>Login Details</h1></legend>
-<form action="login">
+<form action="otp">
 
-Username::<input type='text' name='user'><br>
-Password::<input type='password' name='password'><br>
-			<input type='submit' value='Login'><br>
-
-
+otp number::<input type='text' name='otp'><br>
+			<input type='submit' value='SUBMIT'>
 
 
 </form>
-</fieldset>
 </body>
 </html>
