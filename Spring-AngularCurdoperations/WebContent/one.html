@@ -1,0 +1,38 @@
+<h1>THis One Controller</h1>
+<form>
+Id::<input type="text" ng-model="std.id"><br>
+Name::<input type="text" ng-model="std.name"><br>
+Age::<input type="text" ng-model="std.age"><br>
+Phone::<input type="text" ng-model="std.phone"><br>
+Qual::<input type="text" ng-model="std.qual"><br>
+
+<button ng-click="savedata()">Save</button>
+
+<button ng-click="Getall()">Getall</button>
+
+<button ng-click="deletestudent()">Delete</button>
+
+<button ng-click=updatestudent()">Update</button>
+</form>
+
+
+<table border="2">
+<tr>
+	<th>Id</th>
+	<th>name</th>
+	<th>age</th>
+	<th>phone</th>
+	<th>qual</th>
+
+
+</tr>
+<tr ng-repeat="students in students">
+<td>{{students.id}}</td>
+<td><a href="#one" ng-click="getById(students.id)">{{students.name}}</a></td>
+<td>{{students.age}}</td>
+<td>{{students.phone}}</td>
+<td>{{students.qual}}</td>
+
+</tr>
+
+</table>
